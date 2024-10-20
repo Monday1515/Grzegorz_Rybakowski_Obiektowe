@@ -9,30 +9,42 @@ using namespace std;
 class parrot
 {
 private:
-    string phrase;
+    vector <string> phrases;
 
 public:
 
-    parrot(const string& phrase) : phrase(phrase) {}
+    parrot() {
+        srand(time(0));
+    }
 
-    void say(int times = 1) const {
-        for (int i = 0; i < times; i++) {
-            cout << "Papuga mowi: " << phrase << endl;
+    void addPhrase(const string& newPhrase) {
+        phrases.push_back(newPhrase);
+    }
+
+    void say() const {
+        if (phrases.empty()) {
+            cout << "Papuga nie ma fraz!" << endl;
+        }
+        else
+        {
+           int randomIndex = rand() % phrases.size();
+           cout << "Papuga mowi: " << phrases[randomIndex] << endl; 
         }
     }
 
-    void setPhrase(const string& newPhrase) {
-        phrase = newPhrase;
-    }
 };
 
 int main() 
 {
-    parrot p1("Jestem papuga!");
-    parrot p2("Jestem kura!");
+    parrot p1;
 
-    p1.say(5);
-    p2.say();
-    p1.setPhrase("Jestes papuga, a nie kura!");
+    p1.addPhrase("Papuga jestem, a nie kura");
+    p1.addPhrase("Chce krakersa");
+    p1.addPhrase("Arr Arr Matey");
+    p1.addPhrase("ha ha ha");
+    p1.addPhrase("Kura! Kura!");
+    p1.addPhrase("Armata!");
     p1.say();
+
+    return 0;
 }
