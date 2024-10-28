@@ -38,6 +38,8 @@ public:
         other.width = 0;
     }
 
+
+
     ~Matrices() {
         for (int i = 0; i < height; i++) {
             delete[] matrix[i];
@@ -98,7 +100,8 @@ int main() {
     mtrx3.display();
 
     cout << "mtrx1 (zostalo przeniesione, powinno byc puste):" << endl;
-
+    mtrx1.display();
+    
     return 0;
 
 }

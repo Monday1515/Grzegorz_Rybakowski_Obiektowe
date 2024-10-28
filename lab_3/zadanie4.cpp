@@ -6,9 +6,9 @@
 
 using namespace std;
 
-class no_real_solution : public std::runtime_error {
+class no_real_solution : public runtime_error {
 public:
-    no_real_solution() : std::runtime_error("No real solutions exist for the quadratic equation.") {}
+    no_real_solution() : runtime_error("No real solutions exist for the quadratic equation.") {}
 };
 
 
@@ -65,7 +65,7 @@ int main() {
         
     } catch (const no_real_solution& e) {
         cout << "Error: " << e.what() << endl; 
-    } catch (const std::exception& e) {
+    } catch (const exception& e) {
         cout << "An unexpected error occurred: " << e.what() << endl;
     }
 
