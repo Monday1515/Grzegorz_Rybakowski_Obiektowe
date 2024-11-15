@@ -57,7 +57,7 @@ public:
     }
 };
 
-int main() {
+int main() { // // Prosze tworzyc obiekty takze w pamieci dyamicznej
     cout << "Tworzenie obiektow Tablica..." << endl;
 
     Tablica tablica1;
