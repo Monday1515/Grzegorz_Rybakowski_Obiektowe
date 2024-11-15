@@ -19,7 +19,7 @@ public:
 
 
     ~Samochod() {
-        cout << "Destruktor wywolany dla: " << marka << " " << model << endl;
+        cout << "Destruktor wywolany dla: " << marka << " " << model << endl; // informacja o likwidacji obiektu?
     }
 
 
