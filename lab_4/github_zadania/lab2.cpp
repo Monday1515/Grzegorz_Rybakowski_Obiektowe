@@ -39,7 +39,7 @@ public:
 };
 
 int main() {
-    Nauczyciel nauczyciel("Nauczyciel matematyki", 5000.0);
+    Nauczyciel nauczyciel("Nauczyciel matematyki", 5000.0);  // proszę tworzyc dane także w pamięci dynamicznej
     Nauczyciel nauczyciel1("Nauczyciel polskiego", 3000.0);
     Administracja administracja("Pracownik administracji", 4500.0);
 
