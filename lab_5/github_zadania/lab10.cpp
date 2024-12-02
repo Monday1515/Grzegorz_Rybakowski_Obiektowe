@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream>   // przejrzała wszystkie rozwiązania, są poprawne
 #include <string>
 
 using namespace std;
