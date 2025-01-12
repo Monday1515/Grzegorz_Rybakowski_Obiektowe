@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> // poprawnie; ale, dlaczego tylko rozwiązania dwóch zadań z pięciu?
 
 using namespace std;
 
