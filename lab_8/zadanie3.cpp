@@ -12,7 +12,7 @@ private:
         : name(name), dough(dough), sauce(sauce), topping(topping) {}
 
 public:
-    class Builder {
+    class Builder { // ten wzorzec Budowniczego powinien byc ukonkretniony dlam różnych rodzajów pizzy
     private:
         std::string name;
         std::string dough;
@@ -60,7 +60,7 @@ int main() {
                         .setDough("Thin crust")
                         .setSauce("Tomato")
                         .setTopping("Cheese")
-                        .build();
+                        .build(); // ???
 
     margarita.display();
 
@@ -69,7 +69,7 @@ int main() {
                         .setDough("Thick crust")
                         .setSauce("Barbecue")
                         .setTopping("Pepperoni")
-                        .build();
+                        .build();  // ???
 
     pepperoni.display();
 
