@@ -26,7 +26,7 @@ class Rectangle implements Shape {
     }
 }
 
-class Square implements Shape {
+class Square implements Shape {   // Square mógł śmiało dziedziczyć po Rectangle, bo w istocie jest jego uszczegółowieniem
     private double side;
 
     public Square(double side) {
