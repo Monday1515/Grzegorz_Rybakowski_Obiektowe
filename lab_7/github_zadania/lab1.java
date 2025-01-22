@@ -1,4 +1,4 @@
-class User {
+class User {  // poprawnie
     private String name;
     private String surename;
     private String mail;
